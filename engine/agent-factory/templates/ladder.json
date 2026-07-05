@@ -1,0 +1,22 @@
+{
+  "job": "<job-slug>",
+  "metric_contract": {
+    "metric": "",
+    "baseline": "",
+    "expected_delta": "",
+    "window_days": 45,
+    "measured_by": ""
+  },
+  "capabilities": {
+    "<capability-slug>": {
+      "type": "read|create|external-write",
+      "rung": "L1",
+      "birth_rung": "L1",
+      "promotion_requires": { "clean_runs": 10, "min_days": 14, "real_evals_only": true },
+      "history": [
+        { "date": "", "change": "born at L1", "evidence": "", "signed_off_by": "" }
+      ]
+    }
+  },
+  "reviews": []
+}
