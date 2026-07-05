@@ -97,8 +97,35 @@ Compose, don't invent. If these are installed, use them:
   benchmark step in packs.
 - Any connected MCP server — as an instrumentation source or action adapter.
 
+## The builder improves itself — mandatory, in-session
+
+The builder is an agent under its own improvement loop. When the user corrects the BUILDER's
+output — "that's basic", "you're missing X", "this is confusing", "these sucked", or any
+rejection of quality — do this immediately, in the same session, before continuing the
+engagement:
+
+1. **Classify the miss.** Is it domain-free (belongs in `engine/` — usually a new critic gate
+   or a rule in diagnosis/portfolio) or domain knowledge (belongs in the active `packs/`
+   entry)? Corrections are almost always engine-level: if the same mistake could happen for a
+   different outcome, it goes in the engine.
+2. **Write the fix into this skill's own files.** The skill is installed as a git repo — edit
+   the engine/pack files directly. New critic gates get the next G-number, the detection
+   signal quoted from what the user actually said, and the fix.
+3. **Commit** with a message describing the correction that motivated it. If a remote exists
+   and pushing is authorized, push; otherwise leave the commit for the user to push. If the
+   install is not writable, write the diff to `agent-build/_builder-proposals/` and tell the
+   user.
+4. **Then re-answer the user's actual question** with the fix applied — lead with the answer
+   (G12), not with the mechanics of what you just changed. One line at the end noting the
+   skill was updated is enough.
+
+A user correction that produces no engine/pack change is a dropped signal. The completion
+check below includes: "did every quality correction this session land in the repo?"
+
 ## Completion
 
 Every engagement ends with a written record in `agent-build/<outcome-slug>/`: the diagnosis with
 provenance, the portfolio with pruning reasons, the built agents with their contracts and evals,
-current ladder state, and NEXT.md (what deploys when which constraint clears).
+current ladder state, and NEXT.md (what deploys when which constraint clears). Final check:
+every user correction of builder quality this session has a corresponding engine/pack commit or
+proposal — none dropped.
