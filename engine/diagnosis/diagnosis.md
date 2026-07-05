@@ -1,8 +1,34 @@
-# Diagnosis — model the flow, instrument it, find the constraint
+# Diagnosis — size the ambition, model the flow, instrument it, find the constraint
 
 The outcome is not a menu of tactics. It is a system with one binding constraint. Your job here
 is to find it with real numbers, so the portfolio step puts force where the physics says, not
 where enthusiasm says.
+
+## 0. Size the ambition — magnitude + deadline select the lever class
+
+"Grow revenue" and "grow revenue 75% in 90 days" are different problems with different valid
+answers. Before modeling anything, establish the target Δ and window:
+
+- If the user stated them, record them.
+- If not, do NOT ask another question — propose a default ("I'll plan for a meaningful move:
+  +20% within a quarter") and let them correct it. Corrections are free; questions are not.
+
+Then classify the gap against the **lever classes** (domain-free; packs map them to concrete
+plays):
+
+| Class | What it changes | Typical ceiling |
+|---|---|---|
+| C1 Tune the flow | stage conversions toward reference ranges | low double digits % |
+| C2 Change unit value | price/packaging/offer architecture, cost per unit | 10–30% |
+| C3 Change the mix | shift toward higher-value segments/deals/jobs | large, step-change |
+| C4 Add flows | new products, channels, or sources built on existing assets | large, slower |
+| C5 Structural | partnerships, capacity, business-model changes | largest, slowest |
+
+**Eligibility rule**: estimate the ceiling of C1 alone (sum of realistic stage improvements).
+If the target exceeds it, C2/C3 levers are MANDATORY in the portfolio and the diagnosis must
+say so explicitly — recommending only flow-tuning against a step-change target is critic
+violation G11. If the target exceeds what any lever stack can plausibly bridge in the window,
+say that plainly, with arithmetic, and offer the largest honest plan.
 
 ## 1. Model the flow
 

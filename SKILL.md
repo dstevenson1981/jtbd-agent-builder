@@ -27,6 +27,13 @@ to say "that's basic" or "you missed X."
 2. **Instrument before recommending.** If data is connectable or readable (analytics, CRM,
    payments, repo, files, site), read it. Asking the user for a number you could measure is
    forbidden.
+2b. **Size the ambition, then pick the lever class.** Target magnitude + deadline decide what
+   kinds of plays are even eligible (diagnosis step 0). A step-change target answered with
+   flow-tuning plays is a critic violation. Portfolios must bridge arithmetically to the
+   target or say plainly that they can't.
+2c. **External evidence is mandatory.** Before any portfolio: read the live product/site,
+   check where market demand actually is (cited), and tear down a winner. Plays supported by
+   neither internal data nor external evidence are speculative and cannot be recommended.
 3. **Propose, don't interrogate.** Hard cap: 3 questions per engagement, and only when the answer
    changes which job wins. The portfolio proposal itself is the elicitation — users correct
    concrete proposals far better than they answer abstract questions.
